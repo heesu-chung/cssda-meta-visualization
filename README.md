@@ -26,9 +26,9 @@ Three.js의 react 내 사용 편의성을 위한 라이브러리인 @react-three
 
 해당 페이지의 가장 마지막 content로 배치되어 있으며, 이 프로젝트의 핵심입니다.  
 
-모든 웹페이지 방문 후 구분 한 인터랙션, 디자인적 요소들 중 상위 20개의 요소를 버튼 형태로 구현하여 각 버튼에 onMouseOver 이벤트 발생시 중앙의 원형에 평균 점수, mainColor, sphere 색상을 이용한 정보의 시각적 구분이 가능하도록 구현하였습니다.  
+- 모든 웹페이지 방문 후 구분 한 인터랙션, 디자인적 요소들 중 상위 20개의 요소를 버튼 형태로 구현하여 각 버튼에 onMouseOver 이벤트 발생시 중앙의 원형에 평균 점수, mainColor, sphere 색상을 이용한 정보의 시각적 구분이 가능하도록 구현하였습니다.  
 
-각 항목들은 firebase로부터 받아온 데이터 배열에서 animation 배열과 subDesign 배열 내부에 항목의 이름을 지닌 인덱스의 유무를 판별하여 새 배열에 담는 과정을 거칩니다. 이후 props로 시각화 컴포넌트로 보내져 sphere 색상 및 Line 색상과 점수에 따른 길이 요소의 변수로서 렌더링 되도록 구현되었습니다.
+- 각 항목들은 firebase로부터 받아온 데이터 배열에서 animation 배열과 subDesign 배열 내부에 항목의 이름을 지닌 인덱스의 유무를 판별하여 새 배열에 담는 과정을 거칩니다. 이후 props로 시각화 컴포넌트로 보내져 sphere 색상 및 Line 색상과 점수에 따른 길이 요소의 변수로서 렌더링 되도록 구현되었습니다.
 
 
 ### Factor Toolbar 및 잠금 기능 구현
@@ -46,20 +46,20 @@ Three.js의 react 내 사용 편의성을 위한 라이브러리인 @react-three
 
 ### 각 파트별 Scene 구현
 
-원형 형태의 경우 원하는 반지름 값에 360도를 순회하며 중심으로부터 같은 거리의 180개의 포지션 정보를 배열 형태로 저장 후, sphereGeometry 렌더링 시 해당 배열의 정보를 받아올 수 있도록 구현하였습니다.
+- 원형 형태의 경우 원하는 반지름 값에 360도를 순회하며 중심으로부터 같은 거리의 180개의 포지션 정보를 배열 형태로 저장 후, sphereGeometry 렌더링 시 해당 배열의 정보를 받아올 수 있도록 구현하였습니다.
 
-sphere의 색상은 firebase로부터 받아온 데이터 배열의 mainColor 변수에 저장된 css 색상정보를 출력하도록 구현되었습니다.
+- sphere의 색상은 firebase로부터 받아온 데이터 배열의 mainColor 변수에 저장된 css 색상정보를 출력하도록 구현되었습니다.
 
-Meta Criteria 파트의 경우 three.js의 씬, 카메라를 포함한 렌더러 출력 과정을 간편화한 @react-three/fiber <Canvas> 컴포넌트 내 camera 포지션 속성과 마우스로 간단한 카메라 타겟 이동이 가능한 @react-three/drei <OrbitControls> 컴포넌트 내 target 포지션 속성을 이용해 기존에 구현한 원형의 중앙으로 카메라 포지션을 이동시켜 연출하였습니다. 카메라의 경우 디폴트 값으로 perspective 카메라를 지원하기에 scene 가장자리에 가까워질수록 형태가 왜곡되는 현상이 있습니다. 
+- Meta Criteria 파트의 경우 three.js의 씬, 카메라를 포함한 렌더러 출력 과정을 간편화한 @react-three/fiber <Canvas> 컴포넌트 내 camera 포지션 속성과 마우스로 간단한 카메라 타겟 이동이 가능한 @react-three/drei <OrbitControls> 컴포넌트 내 target 포지션 속성을 이용해 기존에 구현한 원형의 중앙으로 카메라 포지션을 이동시켜 연출하였습니다. 카메라의 경우 디폴트 값으로 perspective 카메라를 지원하기에 scene 가장자리에 가까워질수록 형태가 왜곡되는 현상이 있습니다. 
 
-개별 sphere들의 상하좌우 왕복운동 애니메이션은 DOM내 sphere의 x, y, z 포지션 값을 매 프레임마다 sin 주기로 왕복 운동 포지션이 저장된 배열을 매 프레임마다 순회하는 형식으로 구현하였습니다.
+- 개별 sphere들의 상하좌우 왕복운동 애니메이션은 DOM내 sphere의 x, y, z 포지션 값을 매 프레임마다 sin 주기로 왕복 운동 포지션이 저장된 배열을 매 프레임마다 순회하는 형식으로 구현하였습니다.
 
-분포도(Distribution) Scene은 각각 0.2점 단위 차이가 나는 6가지의 반지름이 다른 원형 포지션 배열을 준비하고 렌더링을 시작하는 배열 index를 각각 차이나게 두는 형태로 구현하였습니다.
+- 분포도(Distribution) Scene은 각각 0.2점 단위 차이가 나는 6가지의 반지름이 다른 원형 포지션 배열을 준비하고 렌더링을 시작하는 배열 index를 각각 차이나게 두는 형태로 구현하였습니다.
 
-9.0 이상 아이템을 다루는 파트에선 Line을 직육면체 형태로 구현하였습니다. 해당 Line 렌더링 컴포넌트의 경우 이전 @react-three/fiber 의 베타버전 react-three-fiber 라이브러리 예시 외에 doc을 찾을 수 없었기에 스택오버플로우 자료를 참고하여 프로세스를 이해한 후 작성한 클론코딩입니다.
+- 9.0 이상 아이템을 다루는 파트에선 Line을 직육면체 형태로 구현하였습니다. 해당 Line 렌더링 컴포넌트의 경우 이전 @react-three/fiber 의 베타버전 react-three-fiber 라이브러리 예시 외에 doc을 찾을 수 없었기에 스택오버플로우 자료를 참고하여 프로세스를 이해한 후 작성한 클론코딩입니다.
 출처 : https://stackoverflow.com/questions/68061538/difficulty-creating-basic-line-react-three-fiber-and-typescript
 
-최하단 파트의 경우 색상 반전된 두 개의 WebGL scene을 중첩시켜 구현하였습니다.
+- 최하단 파트의 경우 색상 반전된 두 개의 WebGL scene을 중첩시켜 구현하였습니다.
 
 
 
