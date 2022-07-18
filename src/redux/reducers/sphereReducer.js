@@ -15,7 +15,7 @@ const specInfo = {
     /* Micro Position Factior */
     dayRatio: 0.05,
     /* Sphere Vertex Factor */
-    resolution: 15,
+    resolution: 10,
     /* Item.length half */
     rotationSpeed: 0.5,
 };
