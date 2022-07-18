@@ -63,7 +63,7 @@ Three.js의 react 내 사용 편의성을 위한 라이브러리인 @react-three
 - 분포도(Distribution) Scene은 각각 0.2점 단위 차이가 나는 6가지의 반지름이 다른 원형 포지션 배열을 준비하고 렌더링을 시작하는 배열 index를 변경해 각각 시작하는 각도가 차이나게 하는 형태로 구현하였습니다.  
 ![meta06](https://user-images.githubusercontent.com/68191058/179503446-f77eafd3-2bff-4d16-91f2-c640bf97c084.gif)
 
-- 9.0 이상 웹페이지를 보여주는 파트에선 Line을 직육면체 형태로 구현하였습니다. 해당 Line 렌더링 컴포넌트의 경우 이전 @react-three/fiber 의 베타버전 react-three-fiber 라이브러리 예시 외에 doc을 찾을 수 없었기에 스택오버플로우 자료를 참고하여 프로세스를 이해한 후 작성한 클론코딩입니다.
+- 9.0 이상 웹페이지를 보여주는 파트에선 Line을 직육면체 형태로 구현하였습니다. 해당 Line 렌더링 컴포넌트의 경우 @react-three/fiber 라이브러리의 이전 베타버전 react-three-fiber 라이브러리 예시 외에 doc을 찾을 수 없었기에 스택오버플로우 자료를 참고하여 프로세스를 이해한 후 작성한 클론코딩입니다.
 출처 : https://stackoverflow.com/questions/68061538/difficulty-creating-basic-line-react-three-fiber-and-typescript  
 ![meta07](https://user-images.githubusercontent.com/68191058/179503484-ee0bc146-9580-4004-b6eb-1aa30d2bfc7c.gif)
 
