@@ -7,7 +7,8 @@
 ## 프로젝트 개요
 WebGL, Three.js 를 사용한 프로젝트입니다.    
 
-CSS Design Awards는 Interactive Developed Web Page에 UI/UX/혁신성에 대한 점수를 매기고, 높은 점수의 웹 페이지에 awards를 부여하는  사이트입니다. 해당 사이트의 경우 매일 가장 높은 점수를 획득한 페이지를 선정하는 WOTD 항목이 있으며, 현재 주류의 시각에서 본 레이아웃, 인터랙션, 인터페이스, 사용자 경험에서 높은 점수를 받은 웹 페이지들입니다.    
+CSS Design Awards는 Interactive Developed Web Page에 UI/UX/혁신성에 대한 점수를 매기고, 높은 점수의 웹 페이지에 awards를 부여하는  사이트입니다. 해당 사이트의 경우 매일 가장 높은 점수를 획득한 페이지를 선정하는 WOTD 항목이 있으며, 현재 주류의 시각에서 본 레이아웃, 인터랙션, 인터페이스, 사용자 경험에서 높은 점수를 받은 웹 페이지들입니다.   
+[CSS Design Awards Link](https://www.cssdesignawards.com/)
 
 이번 프로젝트에서는 이러한 WOTD 웹페이지들의 점수와 이들이 구현한 인터랙션, 인터페이스, UX 및 디자인 요소 들을 구분지어 분류한 후 한 눈에 편리하게 비교를 할 수 있도록 시각화 차트를 구성해보자는 아이디어에서 출발하였습니다.      
 
