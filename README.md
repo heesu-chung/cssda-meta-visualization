@@ -1,7 +1,7 @@
 ## Demo Link
 [https://css-awards-trend.web.app/](https://css-awards-trend.web.app/)
 ## 제작 기간
-7월 9일 ~ 7월 13일 (5일)  
+7월 9일 ~ 7월 13일  
 1인 개발
 
 ## 프로젝트 개요
