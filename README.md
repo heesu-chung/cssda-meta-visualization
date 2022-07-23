@@ -57,7 +57,7 @@ Three.js의 react 내 사용 편의성을 위한 라이브러리인 @react-three
 - Meta Criteria 파트의 경우 three.js의 씬, 카메라를 포함한 렌더러 출력 과정을 간편화한 @react-three/fiber Canvas 컴포넌트 내 camera 포지션 속성과 마우스로 간단한 카메라 타겟 이동이 가능한 @react-three/drei <OrbitControls> 컴포넌트 내 target 포지션 속성을 이용해 기존에 구현한 원형의 중앙으로 카메라 포지션을 이동시켜 연출하였습니다. 카메라의 경우 디폴트 값으로 perspective 카메라를 지원하기에 scene 가장자리에 가까워질수록 형태가 왜곡되는 현상이 있습니다.  
 ![meta04](https://user-images.githubusercontent.com/68191058/179503323-9a58fb75-2855-4197-9dd0-ff01de9a4cbe.gif)
 
-- 개별 sphere들의 상하좌우 왕복운동 애니메이션은 DOM내 sphere의 x, y, z 포지션 값을 매 프레임마다 sin 주기로 왕복 운동 포지션이 저장된 배열을 매 프레임마다 순회하는 형식으로 구현하였습니다.  
+- 개별 sphere들의 상하좌우 왕복운동 애니메이션은 DOM내 sphere의 x, y, z 포지션 값을 매 프레임마다 sin 주기로 왕복 운동 포지션이 저장된 배열을 순회하는 형식으로 구현하였습니다.  
 ![meta05](https://user-images.githubusercontent.com/68191058/179503386-eec117e3-efc8-4184-91d4-da899e8663b9.gif)
 
 - 분포도(Distribution) Scene은 각각 0.2점 단위 차이가 나는 6가지의 반지름이 다른 원형 포지션 배열을 준비하고 렌더링을 시작하는 배열 index를 변경해 각각 시작하는 각도가 차이나게 하는 형태로 구현하였습니다.  
