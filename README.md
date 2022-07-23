@@ -30,7 +30,7 @@ Three.js의 react 내 사용 편의성을 위한 라이브러리인 @react-three
 - 모든 웹페이지 방문 후 구분 한 인터랙션, 디자인적 요소들 중 상위 20개의 요소를 버튼 형태로 구현하여 각 버튼에 onMouseOver 이벤트 발생시 중앙의 원형에 평균 점수, mainColor, sphere 색상을 이용한 정보의 시각적 구분이 가능하도록 구현하였습니다.  
 ![meta09](https://user-images.githubusercontent.com/68191058/179503606-d0e43c68-48fe-41ec-993a-833a2cdcec5f.gif)![meta10](https://user-images.githubusercontent.com/68191058/179503855-ca479f96-3bb4-4f60-a866-4b0451c0324f.gif)  
 
-- 각 항목들은 firebase로부터 받아온 데이터 배열에서 animation 배열과 subDesign 배열 내부에 항목의 이름을 지닌 인덱스의 유무를 판별하여 새 배열에 담는 과정을 거칩니다. 이후 props로 시각화 컴포넌트에 보내져 sphere 색상 및 Line 색상과 점수에 따른 길이 요소의 변수로서 렌더링 되도록 구현되었습니다.
+- 각 항목들은 firebase로부터 받아온 데이터 배열에서 animation 배열과 subDesign 배열 내부에 항목의 이름을 지닌 인덱스의 유무를 판별하여 새 배열에 담는 과정을 거칩니다. 이후 props로 시각화 컴포넌트에 보내져 sphere 색상 및 Line 색상과 점수에 따른 길이가 렌더링 되도록 구현되었습니다.
 
 
 ### Factor Toolbar 및 잠금 기능 구현
