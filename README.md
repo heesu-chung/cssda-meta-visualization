@@ -54,7 +54,7 @@ Three.js의 react 내 사용 편의성을 위한 라이브러리인 @react-three
 - sphere의 색상은 firebase로부터 받아온 데이터 배열의 mainColor 변수에 저장된 css 색상정보를 출력하도록 구현되었습니다.  
 ![meta03](https://user-images.githubusercontent.com/68191058/179503241-efb8b0f6-0d02-4d87-bd0d-f11185036f03.gif)  
 
-- Meta Criteria 파트의 경우 three.js의 씬, 카메라를 포함한 렌더러 출력 과정을 간편화한 @react-three/fiber <Canvas> 컴포넌트 내 camera 포지션 속성과 마우스로 간단한 카메라 타겟 이동이 가능한 @react-three/drei <OrbitControls> 컴포넌트 내 target 포지션 속성을 이용해 기존에 구현한 원형의 중앙으로 카메라 포지션을 이동시켜 연출하였습니다. 카메라의 경우 디폴트 값으로 perspective 카메라를 지원하기에 scene 가장자리에 가까워질수록 형태가 왜곡되는 현상이 있습니다.  
+- Meta Criteria 파트의 경우 three.js의 씬, 카메라를 포함한 렌더러 출력 과정을 간편화한 @react-three/fiber Canvas 컴포넌트 내 camera 포지션 속성과 마우스로 간단한 카메라 타겟 이동이 가능한 @react-three/drei <OrbitControls> 컴포넌트 내 target 포지션 속성을 이용해 기존에 구현한 원형의 중앙으로 카메라 포지션을 이동시켜 연출하였습니다. 카메라의 경우 디폴트 값으로 perspective 카메라를 지원하기에 scene 가장자리에 가까워질수록 형태가 왜곡되는 현상이 있습니다.  
 ![meta04](https://user-images.githubusercontent.com/68191058/179503323-9a58fb75-2855-4197-9dd0-ff01de9a4cbe.gif)
 
 - 개별 sphere들의 상하좌우 왕복운동 애니메이션은 DOM내 sphere의 x, y, z 포지션 값을 매 프레임마다 sin 주기로 왕복 운동 포지션이 저장된 배열을 매 프레임마다 순회하는 형식으로 구현하였습니다.  
