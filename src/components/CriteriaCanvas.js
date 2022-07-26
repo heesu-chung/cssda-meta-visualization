@@ -9,7 +9,7 @@ import { Text } from "../App";
 const Wrapper = styled.div`
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     background: var(--background-color);
 `;
 

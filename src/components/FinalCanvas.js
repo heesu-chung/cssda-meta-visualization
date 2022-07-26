@@ -8,13 +8,13 @@ import FinalAttr from "./FinalAttr";
 const Wrapper = styled.div`
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     background: white;
 
     .canvas {
         position: absolute;
         width: 100%;
-        height: 80vh;
+        height: 90vh;
     }
     .wrap {
         background: #35393e;
